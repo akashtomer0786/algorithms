@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+	// https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/
+What is a good Hash function? I saw a lot of hash function and applications in my data structures courses in college, but I mostly got that it's pretty hard to make a good hash function. As a rule of thumb to avoid collisions my professor said that:
+ 
+function Hash(key)
+  return key mod PrimeNumber
+end
+(mod is the % operator in C and similar languages)
+ 
+with the prime number to be the size of the hash table. I get that is a somewhat good function to avoid collisions and a fast one, but how can I make a better one? Is there better hash functions for string keys against numeric keys?
+	return 0;
+}
