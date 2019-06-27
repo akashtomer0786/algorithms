@@ -1,3 +1,8 @@
+///outer loop runs number of vertex times
+/// inner loop is going to run number of edges times
+/// log(v) for priority queue
+/// O((E+V)logV)
+
 #include<iostream>
 #include<vector>
 #include<queue>
