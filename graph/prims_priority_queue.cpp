@@ -1,3 +1,5 @@
+///The time complexity of the Prim’s Algorithm is  because each vertex is inserted in
+///the priority queue only once and insertion in priority queue take logarithmic time.   O((E+V)log(V))
 #include <iostream>
 #include <vector>
 #include <queue>
