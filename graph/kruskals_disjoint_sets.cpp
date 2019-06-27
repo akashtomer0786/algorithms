@@ -1,3 +1,5 @@
+///In Kruskal’s algorithm, most time consuming operation is sorting because the total complexity of the Disjoint-Set operations will be
+///O(E log(V)), which is the overall Time Complexity of the algorithm
 vector<int> parent, rank;
 
 void make_set(int v) {
