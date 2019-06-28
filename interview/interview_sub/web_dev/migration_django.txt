@@ -5,4 +5,7 @@ into your database schema. They’re designed to be mostly automatic,
 but you’ll need to know when to make migrations, when to run them, 
 and the common problems you might run into
 
-#jo change maine model mei kiya hai use save karna
+#migrate, which is responsible for applying and unapplying migrations.
+
+#jo change maine model mei kiya hai use save karna(migrate) lekin jaise hi migration apply karenge 
+wo database mei change hoga it is like migrations are temporary that store the change
