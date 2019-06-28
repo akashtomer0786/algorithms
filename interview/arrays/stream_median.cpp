@@ -1,3 +1,4 @@
+//O(log(n)) insert and O(1) Query
 class MedianFinder {
 public:
     /** initialize your data structure here. */
