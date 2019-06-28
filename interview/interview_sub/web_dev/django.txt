@@ -1,1 +1,3 @@
 django provide default database db.sqlite3 to the user 
+
+django provides admin account
