@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/11408825/why-is-there-no-null-reference-in-c
