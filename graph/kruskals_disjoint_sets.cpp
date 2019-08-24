@@ -1,10 +1,10 @@
 ///In Kruskal’s algorithm, most time consuming operation is sorting because the total complexity of the Disjoint-Set operations will be
 ///O(E log(V)), which is the overall Time Complexity of the algorithm
-vector<int> parent, rank;
+vector<int> parent, size;
 
 void make_set(int v) {
     parent[v] = v;
-    rank[v] = 0;
+    size[v] = 0;
 }
 
 int find_set(int v) {
@@ -17,11 +17,10 @@ void union_sets(int a, int b) {
     a = find_set(a);
     b = find_set(b);
     if (a != b) {
-        if (rank[a] < rank[b])
+        if (size[a] < size[b])
             swap(a, b);
         parent[b] = a;
-        if (rank[a] == rank[b])
-            rank[a]++;
+        size[a]+=size[b];
     }
 }
 
