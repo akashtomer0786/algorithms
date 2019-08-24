@@ -1,3 +1,4 @@
+///Please see this ques solution for both prim and kruskals https://www.hackerrank.com/challenges/kruskalmstrsub/problem
 ///The time complexity of the Prim’s Algorithm is  because each vertex is inserted in
 ///the priority queue only once and insertion in priority queue take logarithmic time.   O((E+V)log(V))
 #include <iostream>
