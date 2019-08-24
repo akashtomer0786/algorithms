@@ -4,7 +4,7 @@ vector<int> parent, size;
 
 void make_set(int v) {
     parent[v] = v;
-    size[v] = 0;
+    size[v] = 1;
 }
 
 int find_set(int v) {
