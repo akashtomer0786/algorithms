@@ -1,1 +1,3 @@
 https://stackoverflow.com/questions/11408825/why-is-there-no-null-reference-in-c
+///we cannot reverse set think its only natural beahviour 
+///And also we cannot use iterators on stack
