@@ -1,0 +1,2 @@
+https://stackoverflow.com/questions/12359660/difference-between-complete-binary-tree-strict-binary-tree-full-binary-t
+perfect binary tree?
