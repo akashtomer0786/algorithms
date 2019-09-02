@@ -10,3 +10,6 @@ Above class adds numbers together, and returns the sum. The public members - add
 
 https://www.geeksforgeeks.org/polymorphism-in-c/
 https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/
+
+
+https://www.geeksforgeeks.org/pure-virtual-functions-and-abstract-classes/
