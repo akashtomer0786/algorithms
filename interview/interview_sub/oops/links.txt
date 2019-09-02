@@ -1,1 +1,12 @@
+https://medium.com/dot-net-tutorial/oops-interview-questions-with-answers-for-freshers-b2a568ed364b
+https://www.geeksforgeeks.org/encapsulation-in-c/
+https://www.geeksforgeeks.org/access-modifiers-in-c/
 
+
+Data abstraction refers to providing only essential information to the outside world and hiding their background details, i.e., to represent the needed information in program without presenting the details.(https://ideone.com/gVInru  
+
+Above class adds numbers together, and returns the sum. The public members - addNum and getTotal are the interfaces to the outside world and a user needs to know them to use the class. The private member total is something that the user doesn't need to know about, but is needed for the class to operate properly.
+)
+
+https://www.geeksforgeeks.org/polymorphism-in-c/
+https://www.geeksforgeeks.org/virtual-functions-and-runtime-polymorphism-in-c-set-1-introduction/
