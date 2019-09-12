@@ -4,3 +4,6 @@ Time limit exceeds due to data type also
 
 
 https://www.geeksforgeeks.org/difference-strlen-sizeof-string-c-reviewed/
+
+
+All string literals have an implicit null-terminator, irrespective of the content of the string.
