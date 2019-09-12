@@ -1,0 +1,10 @@
+Every RDBMS is a DBMS, but the opposite is not true: RDBMS is a DBMS which is based on the relational model, but not every DBMS must be relational.
+
+However, since RDBMS are most common, sometimes the term DBMS is used to denote a DBMS which is NOT relational. It depends on the context.
+
+https://www.quora.com/What-are-the-types-of-DBMS
+
+Query practice from w3 school
+
+A view in SQL is nothing but a Result Set of a stored query. This SQL query for a view is stored in the Database Dictionary. 
+So, we don't store any data instead a query is stored and whenever we SELECT a View the query associated with the view is executed.
