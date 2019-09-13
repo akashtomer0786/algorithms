@@ -1,2 +1,3 @@
 //https://www.quora.com/What-kind-of-%E2%80%9Coperating-system%E2%80%9D-questions-are-asked-in-technical-interviews-What-are-the-most-important-topics-What-are-the-best-resources-for-preparation
  
+https://www.geeksforgeeks.org/methods-in-interprocess-communication/
