@@ -1,0 +1,7 @@
+Round 2: It was a pen paper based round. All the candidates were given the same question i.g 
+https://www.geeksforgeeks.org/move-zeroes-end-array/ which we have to code on paper within 45 minutes with all possible approaches
+i.g starting right from brute force to the most optimised one. Around 50 applicants were shortlisted for next round.
+Tips- The code should must be neat and clean with proper indentations. If you are left with enough time then you can also
+add comments to it. Besides this, never forget to mention time and space complexities.
+
+///what we can see here that we must tell them every approach here,not just run over the optimised version.
