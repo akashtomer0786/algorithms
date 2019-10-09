@@ -25,7 +25,7 @@ void heapsort(int a[],int n){
     ///uncomment here to apply heap sort
     //for(int i=n-1;i>=0;i--){
       //  swap(a[0],a[i]);
-        //heapify(a,i,0);
+        //heapify(a,i,0);    //here i is the size of heap everytime we are reducing it 
     //}
 }
 int extract_max(int a[],int &n){
