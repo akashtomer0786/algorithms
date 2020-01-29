@@ -10,6 +10,34 @@ bool part(vector<int>&nums,int i,int sum){
     
     return mep[s]=part(nums,i+1,sum-nums[i])||part(nums,i+1,sum);
 }
+
+
+
+bool solve(vector<int>&nums){
+    int sum=0;
+    for(int i : nums){
+        sum+=i;
+    }
+    int n = nums.size();
+    if(sum&1)return false;
+    bool dp[sum/2+1][n+1];
+    for(int i=0;i<=n;i++){
+        dp[0][i]=true;
+    }
+    for(int i=1;i<=sum/2+1;i++){
+        dp[i][0]=false;
+    }
+    // dp[i][j] is the sum i can be obtained till the elemnet j
+    for(int i=1;i<=sum/2;i++){
+        for(int j=1;j<=n;j++){
+            if(nums[j-1]>i)dp[i][j]=false;
+            else dp[i][j]=dp[i-nums[j-1]][j-1]||dp[i][j-1];
+        }
+    }
+    return dp[sum/2][n];
+}
+
+
 int main()
  {
 	int t;
