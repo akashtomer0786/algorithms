@@ -1,3 +1,6 @@
+//amazon
+//try to implement this one   
+//https://math.stackexchange.com/questions/2161015/find-number-of-special-subsequences-in-a-string/2163134#2163134
 #include<bits/stdc++.h>
 using namespace std;
 int main()
