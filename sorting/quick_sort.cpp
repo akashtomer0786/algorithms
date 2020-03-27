@@ -1,32 +1,35 @@
-#include<iostream>
-#include<algorithm>
+#include<bits/stdc++.h>
 using namespace std;
-int partition_qs(int a[], int start, int end1) {
-	int pivot = end1 - 1;
-	int pindex = start;
-	for (int i = start; i < end1; i++) {
-		if (a[i] < a[pivot]) {
-			swap(a[i], a[pindex]);
-			pindex++;
-		}
-	}
-	swap(a[pindex], a[pivot]);
-	return pindex;
+
+int partition(int a[],int start,int end){
+    int pivot=a[end];
+    int pindex=start;
+    for(int i=start;i<=end;i++){
+        if(a[i]<pivot)swap(a[i],a[pindex++]);
+    }
+    swap(a[pindex],a[end]);
+    return pindex;
 }
-void quicksort(int a[], int start, int end1) {
-	//cout << sizeof(a);
-	for (int i = 0; i < end1; i++) {
-		//cout << a[i] << " ";
-	}
-	if (start < end1-1) {
-		int pind = partition_qs(a, start, end1);
-		quicksort(a, start, pind);
-		quicksort(a, pind, end1);
-	}
+void quick_sort(int a[],int start,int end){
+    if(start>=end)return;
+    int partit = partition(a,start,end);
+    quick_sort(a,start,partit-1);
+    quick_sort(a,partit+1,end);
 }
-int main() {
-	int a[] = { 3,-1,2,0 };
-	quicksort(a, 0, 4);
-	  for(int i=0;i<4;i++)
-		 cout<<a[i]<<" ";
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n;
+        cin>>n;
+        int a[n];
+        for(int i=0;i<n;i++){
+            cin>>a[i];
+        }
+        quick_sort(a,0,n-1);
+        for(int i=0;i<n;i++){
+            cout<<a[i]<<" ";
+        }
+        cout<<endl;
+    }
 }
