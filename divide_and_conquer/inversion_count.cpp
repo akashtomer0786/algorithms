@@ -2,6 +2,7 @@
 // Inversions in an array 
 // using Merge Sort 
 //please solve using bit also
+//please solve using binary indexed tree also
 #include <bits/stdc++.h> 
 using namespace std; 
 
