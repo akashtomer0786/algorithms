@@ -1,6 +1,7 @@
 // C++ program to Count 
 // Inversions in an array 
 // using Merge Sort 
+//please solve using bit also
 #include <bits/stdc++.h> 
 using namespace std; 
 
