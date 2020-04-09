@@ -1,4 +1,5 @@
 // A Dynamic Programming based C++ Program for the Egg Dropping Puzzle 
+//if you become advance see also binomial solution
 # include <stdio.h> 
 # include <limits.h> 
 
