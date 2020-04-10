@@ -5,9 +5,9 @@ using namespace std;
 int dp[1001][2][3];
 int solve(int n,int b,int c){
     if(n<=0){
-        return 1;
+        return n;
     }
-    if(b<=0 && c<=0)return 1;
+    if(b==0 && c==0)return 1;    //now you can only add a 
 
     if(dp[n][b][c])return dp[n][b][c];
 
