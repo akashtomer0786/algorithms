@@ -1,0 +1,15 @@
+int dp[500][500];
+int top_down(int a,int b,vector<int>&arr){
+    if(a>=b)return INT_MAX;
+    if(b-a==1){
+        dp[a][b]=max(arr[a],arr[b]);
+        return dp[a][b];
+    }
+    if(dp[a][b]!=-1)return dp[a][b];
+
+    int left = arr[a]+min(top_down(a+2,b,arr),top_down(a+1,b-1,arr));
+    int right = arr[b]+min(top_down(a+1,b-1,arr),top_down(a,b-2,arr));
+
+    return dp[a][b]=max(left,right);
+
+}
