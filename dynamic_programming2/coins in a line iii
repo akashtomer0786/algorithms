@@ -1,15 +1,18 @@
-int dp[500][500];
-int top_down(int a,int b,vector<int>&arr){
-    if(a>=b)return INT_MAX;
-    if(b-a==1){
-        dp[a][b]=max(arr[a],arr[b]);
-        return dp[a][b];
+
+///dp[i][j] represents the score of player in action more than opponent (second player) will get from i to j 
+///First in action whoever moves first 
+class Solution {
+public:
+    bool PredictTheWinner(vector<int>& nums) {
+        int n = nums.size();
+        int dp[n][n];
+        for(int i=0;i<n;i++)dp[i][i]=nums[i];
+        for(int len=2;len<=n;len++){
+            for(int i=0;i+len<=n;i++){
+                int j = i+len-1;
+                dp[i][j]=max(nums[i]-dp[i+1][j],nums[j]-dp[i][j-1]);
+            }
+        }
+        return dp[0][n-1]>=0;
     }
-    if(dp[a][b]!=-1)return dp[a][b];
-
-    int left = arr[a]+min(top_down(a+2,b,arr),top_down(a+1,b-1,arr));
-    int right = arr[b]+min(top_down(a+1,b-1,arr),top_down(a,b-2,arr));
-
-    return dp[a][b]=max(left,right);
-
-}
+};
