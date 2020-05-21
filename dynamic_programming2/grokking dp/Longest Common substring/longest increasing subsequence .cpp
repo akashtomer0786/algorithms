@@ -44,3 +44,23 @@ public:
         return sz;
     }
 };
+int LIS(int arr[],int i,int n,int prev){
+    if(i==n)return 0;
+
+    int excl = LIS(arr,i+1,n,prev);
+    int incl=0;
+    if(arr[i]>prev)
+    int incl = LIS(arr,i+1,n,arr[i]);
+    return max(incl,excl);
+}
+void findLIS(int arr[],int n){
+    vector<int>LIS[n];
+    LIS[0].push_back(arr[0]);
+    for(int i=1;i<n;i++){
+        for(int j=0;j<i;j++){
+            if(arr[j]<arr[i]&&LIS[j].size()>LIS[i].size())
+                LIS[i] = LIS[j];
+        }
+        LIS[i].push_back(arr[i]);
+    }
+}
