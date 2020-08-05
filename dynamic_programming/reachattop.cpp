@@ -1,3 +1,6 @@
+Given a building with N floors in how many ways can you reach from the 0th floor to the Nth floor given at a time you can take 1 step , 2 steps or 3 steps. You can take 1 or 2 steps any number of times but you can take 3 steps at most K times.
+Input N K
+Output - Number of ways you can reach floor N
 #include<bits/stdc++.h>
 using namespace std;
 
