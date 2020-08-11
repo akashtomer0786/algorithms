@@ -65,6 +65,10 @@ void decrease_key(int a[],int i,int key,int n){
     a[i]=key;
     heapify(a,n,i);
 }
+void delete_key(int ind,vector<int>a){
+    increase_key(ind,INT_MAX);
+    extract_key(a);
+}
 int main(){
     int a[]={12,11,13,5,6,7};
     heapsort(a,6);
