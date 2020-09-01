@@ -6,6 +6,7 @@ using namespace std;
 ///it will create core file
 /// gdb a.out core
 ///it will give you the line number where segmentation fault occured
+///we are talking about here linux
 int main(){
     int *i = NULL;
     *i = 10;
