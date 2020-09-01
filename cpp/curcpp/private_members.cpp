@@ -12,6 +12,9 @@ public:
     ///change then you will not be able to do that
     
     ///for that set getter and setter for private member
+    
+    /// we are providing api getter and setter to access these and have 
+    ///better control over data integrity
 };
 int main(){
     a b(3);
