@@ -1,0 +1,64 @@
+#include<iostream>
+using namespace std;
+///Question: why we return reference from copy assigment operator in c++?
+///Answer To Avoid unnecessary overhead
+///see more for link https://stackoverflow.com/questions/15292892/what-is-return-type-of-assignment-operator
+///#include<iostream>
+using namespace std;
+///Question: why we return reference from copy assigment operator in c++?
+///Answer To Avoid unnecessary overhead
+///see more for link https://stackoverflow.com/questions/15292892/what-is-return-type-of-assignment-operator
+///https://stackoverflow.com/questions/3105798/why-must-the-copy-assignment-operator-return-a-reference-const-reference#:~:text=It's%20partly%20because%20returning%20a,that%20exist%20in%20primitive%20types.&text=operator%3D%20can%20be%20defined%20to%20return%20whatever%20you%20want.
+class Base{
+    int _var;
+public:
+    Base(){}
+    Base(int val):_var(val){}
+    Base& operator = (const Base& rhs){
+        _var = rhs._var;
+        return *this; ///here this is pointer to class and *this will return reference
+    }
+    void print(){
+        cout<<_var<<endl;
+    }
+};
+
+int main(){
+
+    Base b1(10);
+    Base b2,b3,b4;
+    b2=b3=b4=b1;
+    b1.print();
+    b2.print();
+    b3.print();
+    b4.print();
+    return 0;
+
+}
+
+class Base{
+    int _var;
+public:
+    Base(){}
+    Base(int val):_var(val){}
+    Base& operator = (const Base& rhs){
+        _var = rhs._var;
+        return *this; ///here this is pointer to class and *this will return reference
+    }
+    void print(){
+        cout<<_var<<endl;
+    }
+};
+
+int main(){
+
+    Base b1(10);
+    Base b2,b3,b4;
+    b2=b3=b4=b1;
+    b1.print();
+    b2.print();
+    b3.print();
+    b4.print();
+    return 0;
+
+}
