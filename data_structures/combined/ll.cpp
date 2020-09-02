@@ -71,6 +71,21 @@ node* delete_at_nthpos(node* head,int n){
     free(head);
     return org;
 }
+DoublyLinkedListNode* reverse(DoublyLinkedListNode* head) {
+    DoublyLinkedListNode* prev = NULL,*temp=NULL;
+
+    while(head){
+        temp = head->next;
+        head->next = prev;
+        if(prev){
+            prev->prev = head;
+        }
+        prev=head;
+        head=temp;
+    }
+    prev->prev=NULL;
+    return prev;
+}
 void print_list(node* head){
     while(head){
         cout<<head->data<<" ";
