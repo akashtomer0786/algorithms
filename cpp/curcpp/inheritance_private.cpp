@@ -12,6 +12,10 @@ public:
 ///now act as private in person
 ///this means that they can be accessed in student class but
 /// but not outside the class
+
+
+/// see private cannot be accessed above you are wrong private cannot be accessed any where insided class 
+/// see here https://www.geeksforgeeks.org/inheritance-in-c/
 class student : private person{
 public:
     void display(){
