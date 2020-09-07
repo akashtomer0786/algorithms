@@ -1,6 +1,8 @@
 #include<iostream> 
 using namespace std; 
 
+Compiler also creates a copy constructor if we don’t write our own copy constructor
+
 class Point 
 { 
 private: 
