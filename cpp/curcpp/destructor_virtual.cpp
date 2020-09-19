@@ -1,28 +1,45 @@
 #include<bits/stdc++.h>
 using namespace std;
-class Person{
-protected:
-    string name;
+class base{
 public:
-    void setName(string iname){
-        name=iname;
+    base(){
+        cout<<"constructing base"<<endl;
+    }
+    virtual ~base(){
+        cout<<"destructing base"<<endl;
     }
 };
-class Student : public Person{
+class derived: public base{
 public:
-    void display(){
-        cout<<name<<endl;
+    derived(){
+        cout<<"constructing derived"<<endl;
+    }
+    ~derived(){
+        cout<<"destructing derived"<<endl;
     }
 };
-
-///in public inheritance
-///all public will remain as public
-///all protected will remain protected in derived
-///all private will remain private in derived
-
 int main(){
-    Student akash;
-    akash.name = "akash"; ///error
-    akash.setName("akash");
-    akash.display();
+    /// base b;
+    ///return 0; ///destruct will be called here for base b
+    ///derived d;
+
+    ///weird thing will not be happening if i simply write this derived d
+    ///here first derived destructor will be called
+    ///and this derived destructor will be calling base destructor
+
+    /// weird thing will happen
+
+    base *b = new derived;
+
+    /// if i don't delete b no destructor will be called
+
+    delete b; /// now destructor will be called
+
+    ///derived destructor is not called because pointer is of base class
+    /// only base destructor will be called;
+
+    ///to call derived destructor make base class virtual destructor
+
+
+
 }
