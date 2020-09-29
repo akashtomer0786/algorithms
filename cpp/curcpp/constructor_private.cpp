@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 ///because of this private constructor i am able to control the number of instance of admin class
+///i can control the number of instance of class can be formed from inside the class , because object of this cannot be created
 ///singleton class
 class Admin{
 private:
