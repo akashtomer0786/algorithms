@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-///if you didn't mention anything inside block then that will not be handled
+this statement is wrong not always necessary to mention every type of error///if you didn't mention anything inside block then that will not be handled
 void test() throw(int,char,runtime_error){ ///the type of exception it can throw
     throw runtime_error("what the hack");
     throw 20;
