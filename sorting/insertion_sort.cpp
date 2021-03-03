@@ -1,17 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
-void solve(int a[],int n){
-    int hole;
-    int temp;
+void insertion_sort(int a[],int n){
     for(int i=1;i<n;i++){
-        hole=i;
-        while(hole>0 && a[hole-1]>a[hole]){
-            swap(a[hole-1],a[hole]);
-            hole--;
+        int val=a[i];
+        int hole=i;
+        while(hole>0 && a[hole-1]>val){
+            a[hole]=a[hole-1];
+            hole=hole-1;
         }
+        a[hole]=val;
     }
 }
-
 int main(){
     int a[]={4,1,2,-1,1,0};
     solve(a,6);
