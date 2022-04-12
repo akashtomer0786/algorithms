@@ -1,3 +1,5 @@
+//https://www.geeksforgeeks.org/multiple-inheritance-in-c/
+//https://www.makeuseof.com/what-is-diamond-problem-in-cpp/
 #include<bits/stdc++.h>
 using namespace std;
 class Animal{
