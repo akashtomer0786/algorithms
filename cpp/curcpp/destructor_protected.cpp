@@ -1,4 +1,9 @@
 #include<bits/stdc++.h>
+
+/**
+Destructors are usually used to deallocate memory and do other cleanup 
+for a class object and its class members when the object is destroyed
+**/
 using namespace std;
 class base{
 protected:
