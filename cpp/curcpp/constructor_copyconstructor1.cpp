@@ -15,6 +15,7 @@ public:
         y=p2.y;
         p=new int;
         *p = *p2.p; ///thats why we really need copy constructor to make deep copy
+        // since p is a address we are not placing it directly in current class object instead we will place the value at that pointer.
 
     }
     ///since x and y are private we need getx and gety to take them as input
