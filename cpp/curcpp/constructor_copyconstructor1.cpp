@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+//https://www.mylearningmania.com/2021/02/deep-and-shallow-copy-in-cpp.html
 class Point{
 private:
     int x,y;
