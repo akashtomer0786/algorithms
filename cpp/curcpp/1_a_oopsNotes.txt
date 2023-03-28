@@ -1,0 +1,39 @@
+Structural Pattern
+Decorator Pattern
+https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm
+Composite Pattern - This pattern creates a class that contains group of its own objects. This class provides ways to modify its group of same objects.
+https://www.baeldung.com/java-composite-pattern
+https://www.geeksforgeeks.org/composite-design-pattern/
+
+Creational Patterns
+Singleton Pattern
+Factory Method
+https://www.javatpoint.com/factory-method-design-pattern
+https://www.geeksforgeeks.org/factory-method-for-designing-pattern/
+
+
+Behavioural Pattern
+Strategy https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm
+Observer https://www.digitalocean.com/community/tutorials/observer-design-pattern-in-java
+
+
+SOLID Principle
+https://www.tripled.io/07/05/2019/dependency-inversion-principle/#:~:text=Inverting%20dependencies&text=We%20call%20this%20dependency%20inversion,reside%20on%20the%20same%20level.
+https://www.baeldung.com/solid-principles
+https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
+
+SOLID
+Single Responsibility Principle - A class should only have one responsibility. Furthermore, it should only have one reason to change.
+Open Closed Principle - The Open-Closed Principle requires that classes should be open for extension and closed to modification. We should be able to add new functionality without touching the existing code for the class.
+Liskov Substitution Principle - The Liskov Substitution Principle states that subclasses should be substitutable for their base classes.This is the expected behavior, because when we use inheritance we assume that the child class inherits everything that the superclass has. The child class extends the behavior but never narrows it down. (See example from Baeldung link)
+Interface Segregation Principle - The principle states that many client-specific interfaces are better than one general-purpose interface. Clients should not be forced to implement a function they do no need.
+Dependency Inversion Principle - The Dependency Inversion principle states that our classes should depend upon interfaces or abstract classes instead of concrete classes and functions.
+
+
+OOPs basic for cpp
+Inheritance
+Polymorphism
+Abstract
+Interface
+
+
