@@ -1,4 +1,4 @@
-
+// more easy example https://www.tutorialspoint.com/design_pattern/decorator_pattern.htm
 #include<iostream>
 using namespace std;
 
